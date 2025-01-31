@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <?php
+
+ class Refrigerado  extends Producto{
+    private $codorg;
+    private $pais;
+    private $fechaenvasado;
+    private $tempmant;
+
+    public function __construct($fechac,$numlot,$codorg,$pais,$fechaenvasado,$tempmant){
+        parent:: __construct($fechac,$numlot);
+        $this->codorg = $codorg;
+        $this->pais = $pais;
+        $this->fechaenvasado = $fechaenvasado;
+        $this->tempmant = $tempmant;
+      }
+
+    public function setcodorg($codorg) {
+        $this->codorg = $codorg;
+    }
+
+    public function setpais($pais) {
+        $this->pais = $pais;
+    }
+
+    public function setfechaenvasado($fechaenvasado) {
+        $this->fechaenvasado = $fechaenvasado;
+    }
+
+    public function settempmant($tempmant) {
+        $this->tempmant = $tempmant;
+    }
+}
+    ?>
+</body>
+</html>
